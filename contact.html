@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <meta name="format-detection" content="telephone=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+   <title>4NGO</title>
+   <meta name="description"
+      content="Допомога переселенцям, дітям-сиротам, матерям-одиначкам, безпритульним тваринам, багатодітним сім’ям, дітям з захворюваннями. Отримати допомогу👉🏼4NGO.UA">
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body class="loaded">
+   <div class="notify">
+      <img src="img/warning.png" alt="">
+      <div class="notify__info">
+         <b>(зразок сайту!) На жаль, на даний момент прийом заявок призупинено.</b>
+         Ми отримали багато заявок за останні дні,тому вимушені взяти час на їх розгляд і опрацювання.
+         <br>
+         Як тільки ми відновимо прийом, сповістимо про це на сайті та в наших соцмережах. Слідкуйте за оновленнями! <a
+            href="https://www.facebook.com/cfhopeua">Перейти в наш Фейсбук</a>
+      </div>
+   </div>
+
+   <div class="main-wrapper">
+
+      <main class="content">
+         <div class="contact">
+            <div class="wrapper">
+               <div class="contact__box flex">
+                  <div class="contact__image" id="exmpl">
+
+                     <img src="img/example.jpg" alt="">
+                     <h2 class="contact__title">Приклад заявки</h2>
+                  </div>
+                  <div class="contact__formbox">
+                     <h2 class="contact__formtitle">
+                        Залиште заявку на допомогу <br>
+                        <a href="#exmpl" class="content__explink anchor">Приклад заявки</a>
+                     </h2>
+                     <div class="contact__important">
+                        <div class="contact__text">
+                           <p>Поля позначені <b>(*)</b> є обов'язковими до заповнення</p>
+                        </div>
+                        <div class="contact__text">
+                           <p>Ми <b style="text-transform: uppercase;">ніколи не питаємо</b> секретні дані типу:
+                              пін-коди карт, CVV тощо, лише реквізити для оплати.</p>
+                        </div>
+                     </div>
+                     <form action="thanks.php" enctype="multipart/form-data" method="post" class="contact__form">
+
+                        <fieldset disabled="disabled">
+                           <div class="contact__row flex">
+                              <p class="contact__grouptitle">1. Введення особистих даних</p>
+                              <div class="contact__input">
+                                 <label for="field-1">ПІБ <span>*</span></label>
+                                 <input type="text" id="field-1" name="name" class="required" placeholder="Ваше ім'я"
+                                    readonly>
+
+                              </div>
+                              <div class="contact__input">
+                                 <label for="field-2">Контактний номер <span>*</span></label>
+                                 <input type="text" id="field-2" name="phone" class="phone required" placeholder="+38"
+                                    readonly>
+
+                              </div>
+                              <div class="contact__input">
+                                 <label for="field-8">IBAN <span>*</span></label>
+                                 <input type="text" id="field-8" name="card" class="card required"
+                                    placeholder="••••••••••••••••" readonly>
+
+                              </div>
+                              <div class="contact__input" style="width: 100%;">
+                                 <label for="field-9">Ідентифікаційний код (номер банківської карти та ІПН обов’язково
+                                    однієї особи) <span>*</span></label>
+                                 <input type="text" id="field-9" name="ipn" class="required"
+                                    placeholder="••••••••••••••••" readonly>
+
+                              </div>
+                              <div class="contact__input semi">
+                                 <label for="field-3">Попереднє місце проживання <span>*</span></label>
+                                 <input type="text" id="field-3" name="city1" class="required"
+                                    placeholder="Попереднє місце проживання" readonly>
+
+                              </div>
+                              <div class="contact__input semi">
+                                 <label for="field-4">Поточне місце проживання <span>*</span></label>
+                                 <input type="text" id="field-4" name="city2" class="required"
+                                    placeholder="Поточне місце проживання" readonly>
+
+                              </div>
+
+                              <div class="contact__separator"></div>
+                              <p class="contact__grouptitle">2. Посилання на соцмережі</p>
+
+
+                              <div class="contact__input">
+                                 <label for="field-5">Посилання на телеграм</label>
+                                 <input type="text" id="field-5" name="soc1" placeholder="https://t.me/your_page "
+                                    readonly>
+
+                              </div>
+                              <div class="contact__input">
+                                 <label for="field-6">Посилання на вайбер</label>
+                                 <input type="text" id="field-6" name="soc2"
+                                    placeholder="viber://chat?number=+your_number " readonly>
+
+                              </div>
+                              <div class="contact__input">
+                                 <label for="field-7">Посилання на інстаграм</label>
+                                 <input type="text" id="field-7" name="soc3"
+                                    placeholder="https://instagram.com/your_page" readonly>
+
+                              </div>
+
+                              <div class="contact__separator"></div>
+                              <p class="contact__grouptitle">3. Детальний опис ситуації&nbsp;</p>
+
+                              <div class="contact__input big">
+                                 <label for="text-1">Детально опишіть, чому Вам потрібна підтримка і як Ви збираєтеся
+                                    використовувати гроші. Будьте конкретні щодо своєї сім’ї,
+                                    ситуації.&nbsp;<span>*</span></label>
+                                 <textarea name="descr" id="text-1" class="required" placeholder="Опишіть вашу ситуацію"
+                                    readonly></textarea>
+
+                              </div>
+                              <div class="contact__file flex">
+                                 <div class="contact__label">Завантажте фото/відео-докази Вашої ситуації та документ, що
+                                    підтверджує прописку або місце проживання <b>(максимальний розмір файлів 10мб)</b>
+                                 </div>
+                                 <label for="file-1">Додайте файли</label>
+                                 <input type="file" id="file-1" name="design[]" size="10000000" multiple="multiple"
+                                    readonly>
+                              </div>
+                              <div class="contact__file2 flex ">
+                                 <div class="contact__label">Якщо розмір файлів перевищує 10мб, завантажте документи на
+                                    будь-який файлообмінник і вставте сюди посилання на файли.</b></div>
+                                 <div class="contact__input semi" style="margin-bottom: 0;">
+                                    <label for="field-10">Посилання на файли</label>
+                                    <input type="text" id="field-10" name="fileslink" placeholder="Файл">
+
+                                 </div>
+                              </div>
+                              <button type="submit" class="contact__send" disabled>Відправити заявку на
+                                 опрацювання</button>
+                           </div>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </main>
+
+      <header class="header white">
+         <div class="wrapper">
+            <div class="header__box flex">
+               <a href="/" class="header__logo">
+                  <img src="img/logo-black.png" alt="">
+               </a>
+               <nav class="header__nav">
+                  <ul class="flex">
+                     <li>
+                        <a href="index.html#about">Про Фонд</a>
+                     </li>
+                     <li>
+                        <a href="index.html#who">Кому допомагаємо?</a>
+                     </li>
+                     <li>
+                        <a href="index.html#types">Види допомоги</a>
+                     </li>
+                     <li>
+                        <a href="https://www.facebook.com/cfhopeua">
+                           Наш Фейсбук
+                        </a>
+                     </li>
+                     <li>
+                        <a href="contact.html">
+                           Контакти
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+               <div class="header__toggle">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </div>
+         </div>
+         <div class="header__mob">
+            <div class="wrapper">
+               <div class="header__head flex">
+                  <a href="/" class="header__logo">
+                     <img src="img/logo.png" alt="">
+                  </a>
+                  <div class="header__toggle">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+               </div>
+               <nav class="header__mobnav">
+                  <ul class="flex">
+                     <li>
+                        <a href="index.html#about">Про Фонд</a>
+                     </li>
+                     <li>
+                        <a href="index.html#who">Кому допомагаємо?</a>
+                     </li>
+                     <li>
+                        <a href="index.html#types">Види допомоги</a>
+                     </li>
+                     <li>
+                        <a href="https://www.facebook.com/cfhopeua">
+                           Наш Фейсбук
+                        </a>
+                     </li>
+                     <li>
+                        <a href="contact.html">
+                           Контакти
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+
+      <!-- HEADER EOF   -->
+
+      <!-- BEGIN FOOTER -->
+
+      <footer class="footer blue">
+         <img src="img/wave2.jpg" alt="" class="footer__wave">
+         <div class="wrapper">
+            <div class="footer__box flex">
+               <div class="footer__col taс">
+                  <a href="" class="footer__logo">
+                     <img src="img/logo.png" alt="">
+                  </a>
+                  <p class="footer__copy">© БО "Благодійній Фонд 4NGO"</p>
+                  <p class="footer__text">Донецька область, м.Авдіївка, вул.Нечаєва</p>
+                  <p class="footer__copy">
+                     <a href="mailto:boss@cfhope.in.ua" style="color: #fff;">boss@cfhope.in.ua</a>
+                  </p>
+                  <a href="https://www.facebook.com/cfhopeua" target="_blank" class="footer__inst">
+                     <img src="img/instagram.png" alt="">
+                     <span>Наш Фейсбук</span>
+                  </a>
+                  <p class="footer__copy">
+                     <a href="privacy.pdf" target="_blank" style="color: #fff;">Політика конфіденційності</a>
+                  </p>
+                  <p class="footer__copy">
+                     <a href="ustavni.pdf" target="_blank" style="color: #fff;">Уставні документи</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- FOOTER EOF   -->
+
+   </div>
+
+   <div class="icon-load"></div>
+
+   <!-- BODY EOF   -->
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"
+      integrity="sha512-lzilC+JFd6YV8+vQRNRtU7DOqv5Sa9Ek53lXt/k91HZTJpytHS1L6l1mMKR9K6VVoDt4LiEXaa6XBrYk1YhGTQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"
+      integrity="sha512-t0ovA8ZOiDuaNN5DaQQpMn37SqIwp6avyoFQoW49hOmEYSRf8mTCY2jZkEVizDT+IZ9x+VHTZPpcaMA5t2d2zQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!--
+	<script type="text/javascript" src="js/components/jquery.fancybox.js" ></script>
+	<script type="text/javascript" src="js/components/jquery.mask.js" ></script>
+	<script type="text/javascript" src="js/components/slick.js" ></script>
+	<script type="text/javascript" src="js/components/jquery.mCustomScrollbar.js" ></script>
+	-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+      integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
+</html>
